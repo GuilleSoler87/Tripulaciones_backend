@@ -126,7 +126,7 @@ const UserController = {
           { expiresIn: "48h" }
         );
         const url =
-          "https://desafio-backend-production.up.railway.app/users/confirm/" +
+          "http://localhost:8080/users/confirm/" +
           emailToken;
         //Esta es la orden del envío de correo al usuario para su validación
         await transporter.sendMail({
